@@ -45,6 +45,7 @@ header{
 }
 
 #ddmenu1{
+  
   left: -130px;
   top: 100%;
   background-color: black;
@@ -67,3 +68,19 @@ header{
   top: 100%;
   background-color: blueviolet;
 }
+
+
+button{
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.back-color-black{
+  background-color: black;
+}
+
+.color-white{
+  color: white;
+}
+

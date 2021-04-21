@@ -1,9 +1,14 @@
 $(function(){
-  var dropDownMenu = $('.ddmenu');
 
-  $(document).on('mouseenter', '.withdd ', function(){
+  $(document).on('mouseenter click', '.withdd a', function(){
     console.log(this);
     // ad ogni singolo .ddmenu 
-    $(this).children().addClass('active');
+    $(this).next().toggleClass('active');
   });
+
+ /*  $(document).on('click', '.withdd a', function(){
+    console.log(this);
+    // ad ogni singolo .ddmenu 
+    $(this).children().removeClass('active');
+  }); */
 })
