@@ -1,14 +1,15 @@
 $(function(){
 
-  $(document).on('mouseenter click', '.withdd a', function(){
+  $(document).on('mouseenter', '.withdd ', function(){
     console.log(this);
     // ad ogni singolo .ddmenu 
-    $(this).next().toggleClass('active');
+    $('.ddmenu').removeClass('active');
+    $(this).children('.ddmenu').addClass('active');
   });
 
- /*  $(document).on('click', '.withdd a', function(){
+  $(document).on('click', '.withdd ', function(){
     console.log(this);
     // ad ogni singolo .ddmenu 
-    $(this).children().removeClass('active');
-  }); */
+    $(this).children('.ddmenu').toggleClass('active');
+  });
 })
